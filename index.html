@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/simplePagination.js/1.6/simplePagination.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+    <link rel="stylesheet" href="./css/wbPagination.css">
+    <script src="./js/wbpagination.js"></script>
+</head>
+<style>
+    #pagination{
+        margin-top: 100px;
+    }
+</style>
+<body>
+    <div id='pagination'></div>
+</body>
+
+<script>
+    $('#pagination').wbPagination({
+        items: 1000,
+        itemsOnPage: 20,
+        onPageClick: function (pageNumber, event) {
+            console.log(`我是第${pageNumber}页`)
+        }
+    })
+</script>
+
+</html>

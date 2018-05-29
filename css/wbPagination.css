@@ -1,0 +1,30 @@
+.page-link {
+    width: auto;
+}
+
+.light-theme a.page-link, .light-theme span.page-link{
+    min-width: 30px;
+}
+.jump-page-box{
+    margin-top: 15px;
+}
+.jump-page-box .jump-input{
+    margin-right: 6px !important;
+    margin-left: 6px;
+}
+.simple-pagination {
+    display: inline-block;
+}
+.nav{
+    text-align: center;
+}
+.jump-page-box{
+    text-align: center;
+}
+.jump-box {
+    display: inline-block;
+}
+.jump-box input {
+    display: inline-block;
+    width: 60px;
+}
